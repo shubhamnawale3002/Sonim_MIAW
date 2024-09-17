@@ -9,9 +9,9 @@
     <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
      <script type='text/javascript'>
 	function initEmbeddedMessaging() {
- 	console.log('Came into the script before try ');
+ 	console.log('Sonim Chat');
 		try {
-  			console.log('Came into the script');
+  			console.log('Sonim Try Block');
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
 			embeddedservice_bootstrap.init(
@@ -23,7 +23,7 @@
 				}
 			);
 		} catch (err) {
-  			console.log('Came into the script before try 2');
+  			console.log('Sonim Catch Block');
 			console.error('Error loading Embedded Messaging: ', err);
 		}
 	};
