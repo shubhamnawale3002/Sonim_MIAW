@@ -9,8 +9,9 @@
     <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
      <script type='text/javascript'>
 	function initEmbeddedMessaging() {
+ 	console.log('Came into the script before try ');
 		try {
-  			Console.log('Came into the script');
+  			console.log('Came into the script');
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
 			embeddedservice_bootstrap.init(
@@ -22,6 +23,7 @@
 				}
 			);
 		} catch (err) {
+  			console.log('Came into the script before try 2');
 			console.error('Error loading Embedded Messaging: ', err);
 		}
 	};
